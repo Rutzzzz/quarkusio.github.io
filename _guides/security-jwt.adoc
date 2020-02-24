@@ -31,7 +31,7 @@ First, we need a new project. Create a new project with the following command:
 mvn io.quarkus:quarkus-maven-plugin:{quarkus-version}:create \
     -DprojectGroupId=org.acme \
     -DprojectArtifactId=security-jwt-quickstart \
-    -DclassName="org.acme.jwt.TokenSecuredResource" \
+    -DclassName="org.acme.security.jwt.TokenSecuredResource" \
     -Dpath="/secured" \
     -Dextensions="resteasy-jsonb, jwt"
 cd security-jwt-quickstart
@@ -41,7 +41,7 @@ This command generates the Maven project with a REST endpoint and imports the `s
 
 === Examine the JAX-RS resource
 
-Open the `src/main/java/org/acme/jwt/TokenSecuredResource.java` file and see the following content:
+Open the `src/main/java/org/acme/security/jwt/TokenSecuredResource.java` file and see the following content:
 
 .Basic REST Endpoint
 [source,java]
